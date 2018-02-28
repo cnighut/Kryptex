@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rules and regulations</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+</head>
+
+<style>
+  .containerh a:hover{
+    color: white;
+  }
+</style>
+
+<body>
+
+ <header style="background:white;">
+
+    <div class="header-row1">
+      <a href="http://www.iitbbs.ac.in"><img src='http://www.iitbbs.ac.in/images/iitbbs_logo.png' height='100%' alt='IIT Bhubaneswar'/></a>
+      <a href="http://2018.almafiesta.com/"><img src='http://almafiesta.com/alma.png' height='100%' alt='almafiesta'/></a>
+    </div>
+  </header>
+     <div class="containerh teal borderYtoX">
+  		<a href="abt.html">ABOUT</a>
+  		<a href="signup.html">SIGNUP</a>
+  		<a href="ldr.html">LEADERBOARD</a>
+  		<a href="rules.html">RULES</a>
+  		<a href="cus.html">CONTACT US</a>
+	</div>
+<div style="padding-top: 50px;"></div>
+<div class= "rar" id="rar" style="text-align: center;font-size: 24px; width: 90%; margin:auto; max-width: 700px; height: 80%;">
+      RULES AND REGULATIONS<br>
+      <br>
+      <div class="movingr" style="width: 80">
+        <div class="mySlides" style="text-align: center;"> 
+            Kryptex, the online cryptography contest of Alma Fiesta, is designed in various levels.<br><br>The main goal is to reach the next level by solving the puzzle at the current level. <br>Each level has one problem to be solved.<br><br>Folks, there is only one correct answer to each level. <br><br>If you couldn't get the answer, TRY HARDER, to get it!<br> Online search, proper deduction and careful observation is enough to take you to the new level and eventually closer to glory!
+            
+        </div>
+        <div class="mySlides" style="text-align: center;">Hey people, if you find a level too dificult and couldn't solve it, don't resort to &nbsp SKIPPING &nbsp that &nbsp LEVEL &nbsp as that's unfair and if we get to know that, we may even disqualify you.<br>No more fun for you then!<br><br>
+But the good thing is that we will be releasing hints for the difficult levels through our Facebook page! Follow them for sure!<br><br>
+You can also mail us. Contact details of the problem setters are provided in the contact us section. You can mail us for any queries or hints to solve the puzzles and thus avoid getting DISQUALIFIED</div>
+        <div class="mySlides" style="text-align: center;">Beware of the spellings that you enter. Kryptex can't auto correct your spellings.<br><br>Also Kryptex does not understand punctuation marks and spaces! <br>(You heard that right pedants!)<br><br>If your answer is <p style="color: #3cad40">C. Dickens</p>type it as CDickens<br><br>However, all these instructions can be overridden, if you believe it to be</br> necessary :)</div>
+      </div>
+
+      <div class="w3-center">
+        <div class="w3-section">
+        <br>
+          <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+          <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+        </div>
+        <br>
+        <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+        <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+        <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+      </div>
+    </div>
+
+<div class= "rowff"><strong></br><h5 style="color: white; font-size: 16px;">
+     <a href="Almafiesta.com" style="text-align: center;margin: auto;">Almafiesta </a>© Copyright 2018, All Rights Reserved |Web Development Team|</h5></strong></div>
+
+</body>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+</html>

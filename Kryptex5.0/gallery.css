@@ -1,0 +1,136 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  height:auto;
+  width:100%;
+  margin-top:70px;
+  margin-bottom:80px;
+  padding-left:80px;
+}
+.cards{
+  height:250px;
+  width:250px;
+  margin:20px;
+  display:inline-block;
+  background-color:rgba(24,23,23,0.3);
+
+  text-align:center;
+  border-radius:20px;
+  box-shadow:0 0 10px grey,0 0 15px grey,
+    0 0 20px grey,
+    0 0 30px grey;
+}
+.cards:hover{
+  background-color:greenyellow;
+  animation:zoom 1s linear 1;
+  animation-fill-mode:forwards;
+ 
+}
+.cards img{
+  margin-top:25px;
+  height:80%;
+  width:80%;
+  border-radius:20px;
+  opacity:1;
+}
+
+@keyframes zoom{
+  0%{
+    height:250px;
+    width:250px;
+  }
+  50%{
+    height:260px;
+    width:260px;
+  }
+  100%{
+    height:270px;
+    width:270px;
+  }
+  
+}
+/* <!-- styling videos --> */
+.topic{
+  margin-top:50px;
+  margin-bottom:50px;
+  padding-top:25px;
+  letter-spacing: 30px;
+  height:150px;
+  width:auto;
+  background-color:black;
+  font-size: 80px;
+font-family: 'Courgette',cursive,monospace;
+color: #fff;
+  animation:beat 1s linear 0.5s infinite;
+  transform:rotateZ(-7deg); 
+
+text-shadow: 0 0 5px #fff,
+  0 0 10px #fff, 
+  0 0 20px #ff0080,
+  0 0 30px #ff0080, 
+  0 0 40px #ff0080, 
+  0 0 55px #ff0080,
+  0 0 75px #ff0080;
+  
+text-align: center;
+ 
+  text-transform:uppercase;
+  border-radius:60px;
+}
+.videos{
+  width:100%;
+  height:auto;
+  margin-top:60px;
+  margin-bottom:50px;
+  margin-left:150px;
+
+
+}
+.drop{
+  height:700px;
+  width:40px;
+  border-left:solid 5px black;
+   border-right:solid 5px black;
+  margin-left:40px;
+  position:absolute;
+}
+
+.videobox{
+  width:500px;
+  display:inline-block;
+  height:350px;
+  background-color:rgba(24,23,23,0.3);
+  box-shadow:0 0 10px grey,0 0 20px grey,
+    0 0 40px grey,
+    0 0 60px grey;
+  padding-top:20px;
+  padding-left:20px;
+  margin:20px;
+  border-radius:20px;
+}
+.videobox:hover{
+  background-color: greenyellow;
+}
+iframe{
+  margin:10px;
+}
+
+@keyframes  beat{
+  0%{
+   letter-spacing: 30px;
+    }
+  50%{
+    letter-spacing: 50px;
+   }
+  100%{
+    letter-spacing: 30px;
+  }
+}
+
+
+
+

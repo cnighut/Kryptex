@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.inline-block {
+   display: inline-block;
+}</style>
+  <title>Registration Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:black">
+<div style="padding-top:20px"><p style="color:White"><span style="align:left;padding-left:50px">Welcome, Uni-Omni</span><span style="float:right;padding-right:50px">Level 5</span></div>
+<!--<table class="table table-responsive"><tr><td style="height:auto;width:500px;padding-right:20px;"><img class="img-responsive" src="Images/Img3.jpg"</img></td>
+<td style="height:300px;width:500px;padding-left:60px;padding-right:20px;"><img class="img-responsive" style="width:350px;height:350px;"src="Images/Img4.jpg"</img></td>
+<td style="height:auto;width:500px;padding-left:20px"><img class="img-responsive" src="Images/Img5.jpg"</img></td></tr><table>
+<p style="color:white;padding-left:50px;padding-right:50px;padding-top:50px;padding-right:100px"></p>-->
+ <div id="banner">
+    <div class="inline-block">
+        <img style="width:300px;height:300px;" src ="assets/images/Img3.jpg">
+    </div>
+	<!--<div class="inline-bock" style="color:white;font-size:60px">+</div>-->
+	<img style="width:150px;height:300px;" src ="assets/images/Img6.jpg">
+    <div class="inline-block">
+        <img style="width:300px;height:300px;" src ="assets/images/Img4.jpg">
+    </div>
+	<!--<div class="inline-bock" style="color:white;font-size:60px">+</div>-->
+	<img style="width:150px;height:300px;margin:0 auto" src ="assets/images/Img6.jpg">
+    <div class="inline-block">
+        <img style="width:300px;height:300px" src ="assets/images/Img5.jpg">
+    </div>
+	<div style="padding-bottom:100px"></div>
+	<textarea id="ta" onkeypress="eAlert(event,this)" style="display:block;margin-left:auto;margin-right:auto;"></textarea>
+</div>
+<script>
+function eAlert(e,textarea){
+var code=(e.keyCode?e.keyCode:e.which);
+if(code==13)
+{
+var str=document.getElementById("ta").value;
+console.log(str);
+var k="Spider-Man:Homecoming";
+if(str===k)
+{
+location.href='index.html';
+}
+}
+}
+</script>
+</body>

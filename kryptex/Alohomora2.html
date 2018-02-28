@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<HTML>
+<head><meta charset="utf-8">
+<title>f=0.45,a=0.05,b=0.09,e=0.16,c=0.12,d=0.13</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style= "background-color: Black">
+<div style="padding-top:20px"><p style="color:White"><span style="align:left;padding-left:50px">Welcome, Uni-Omni</span><span style="float:right;padding-right:50px">Level 2</span></div>
+<div style="padding-top:20px">
+<p style="align:center"><img class="img-responsive" style="margin: 0 auto ;align=middle;padding-top=30px;" src="assets/Images/Img2.jpeg"</img><p>
+<p style="color:White;text-align:center;font-size:40px;padding-bottom:10px;">+</br>1100100111101</br>=</p>
+<textarea id="ta" onkeypress="eAlert(event,this)" placeholder="Your Answer Here" style="display:block;margin-left:auto;margin-right:auto;"></textarea></div>
+<!--Now putting checks. Will have to link to backend to get his username. Also add onBlur-->
+<script>
+function eAlert(e,textarea){
+var code=(e.keyCode?e.keyCode:e.which);
+if(code==13)
+{
+var str=document.getElementById("ta").value;
+console.log(str);
+if(str.toLowerCase()==="aced")
+{
+location.href='index.html';
+}
+}
+}
+</script>
+</body>
+</HTML>

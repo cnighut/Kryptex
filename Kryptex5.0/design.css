@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration:none;
+}
+body{
+    background-color:gainsboro;
+    }
+/* <!-- navigation styling -->
+*/
+.nav{
+    top:0;
+    width:100%;
+    height:15vh;
+    background-color:black;
+    opacity:0.7;
+    position:fixed;
+    z-index:1000;
+}
+.nav ul{
+    display:inline-block;
+}
+.nav ul li{
+    float:left;
+    width:300px;
+    font-size:40px;
+    font:#009999;
+    text-transform:capitalize;
+    text-align:center;
+    padding-top:20px;
+    font-family:cursive;
+}
+.nav ul li:hover{
+    border-top:#099 solid 8px;
+  
+}
+.nav ul li a{
+    color:#099;
+}
+.nav ul li a:hover{
+    color:#033;
+}
+}
+.nav ul li a:hover {
+    color:#033;
+  
+}
+.nested  li {
+    display:none;
+    background-color:white;
+}
+
+
+.nav ul .onhover:hover .nested li{
+    display:block;
+    border:none;
+   
+}
+.nav ul .onhover:hover .nested li:hover{
+    background-color:#0ee;
+}
+/* <-- navigation bar styling ends here--> */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* <--carousel starts here--> */
+.crsl{
+    margin-top:99px;
+    height:500px;
+    width:100%;
+    overflow:hidden;
+     box-shadow: 20px 10px 5px #4c4c4c;
+}
+.crsl figure{
+    width:300%;
+    float:left;
+    position:relative;
+    margin:0;
+    animation:30s slidy infinite ease;
+    left:0;
+}
+.crsl figure .slide{
+    width:33.3%;
+    float:left;
+   
+}
+.crsl figure .slide img{
+    width:100%;
+    height:500px;
+    
+}
+@keyframes slidy{
+    
+    0%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+    50%{
+        left:-200%;
+    }
+    75%{
+        left:-100%;
+    }
+    100%{
+        left:0%;
+    }
+
+}
+/* <--carousel ends here --> */
+
+/* <!-- main content -->*/
+
+.cnt_heading{
+    width:100%;
+    margin-top:50px;
+    height:auto;
+    text-align:center;
+  
+}
+.heading_border{
+    width:20%;
+    height:10px;
+    border-top:solid 2px grey;
+    border-bottom:solid 2px grey;
+    display:inline-block;
+    
+}
+.cnt_main_heading{
+    width:50%;
+    text-align:center;
+    font-size:80px;
+    color:black;
+    font-family:'Just Another Hand', Helvetica, sans-serif;
+  color: #969595;
+  text-shadow: 0px 3px 0px #5e5e5e, 0px 5px 0px #4d4d4d, 0px 7px 0px #3c3c3c, 0px 9px 0px;
+    display:inline-block;
+}
+.cnt_para{
+    height:auto;
+    width:80%;
+    text-align:center;
+    margin-left:100px;
+}
+.cnt_para p{
+    
+      font-family:'Merienda One', Helvetica, sans-serif;
+  color: rgba(0,0,0,0.7);
+  text-shadow: 3px 3px 3px #fff;
+}
+/* <!-- main content ends here ->
+*/
+/* flashcards intro designing*/
+.flashintro{
+    width:100%;
+    height:100px;
+    margin:0 50px;
+    
+}
+.hr_line_design{
+    margin-top:50px;
+    margin-left:100px;
+    width:350px;
+    height:20px;
+    border-top:solid 2px grey;
+    border-bottom:solid 2px grey;
+     display:inline-block;
+}
+.intro_cnt{
+    height:70px;
+    width:auto;
+    text-align:center;
+    display:inline-block;
+}
+.intro_cnt h2{
+    font-size:40px;
+    font-family:cursive;
+    color:#099;
+    padding-left:80px;
+   
+}
+.intro_cnt h2:hover{
+    animation:shake 4s linear infinite;
+}
+
+/* <!--flashcards start here -->*/
+.flashcard{
+    width:100%;
+    height:500px;
+    
+    
+}
+
+.container{
+    margin-top:50px;
+    margin-left:60px;
+    width:250px;
+    height:250px;
+    perspective:700;
+    display:inline-block;
+    position:relative;
+    
+    
+}
+.flip{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    
+    
+    
+}
+
+.front{
+    width:100%;
+    height:100%;
+    position:absolute;
+    transform:rotateY(0deg);
+    backface-visibility: hidden;
+    transition:transform .9s ease ;
+    border-radius:50%;
+    border:dashed 15px black;
+    box-shadow:10px 10px 5px grey;
+     animation:shake 4s infinite;
+}
+.front img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+   
+}
+
+.flip:hover .front{
+  animation:stop 0.3s linear  infinite;
+  transform:rotateY(-180deg);
+
+   
+}
+.back{
+    background-color:lawngreen;
+    width:100%;
+    height:100%;
+     position:relative;
+    transform:rotateY(-180deg);
+    backface-visibility: hidden;
+    transition:transform 0.9s ease;
+    border-radius:50%;
+    border:dashed 15px black;
+    box-shadow:10px 10px 5px grey;
+    
+}
+.back h2{
+    text-align:center;
+    padding-top:80px;
+    font-size:30px;
+    font-family:cursive;
+    text-transform:capitalize;
+    text-decoration:underline;
+}
+.back h3{
+    font-size:14px;
+    color:black;
+    text-align:center;
+    font-family:"verdana";
+}
+
+.flip:hover .back{
+    transform:rotateY(0deg);
+   
+}
+/* flashcards for people and their feedbacks */
+
+/* styling same as flashcards for events */
+
+/* footer styling */
+
+.footer{
+    width:100%;
+    height:350px;
+    background-color:#393939;
+    
+}
+.connect{
+    padding-top:80px;
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+
+.connect a{
+    display:inline-block;
+    padding-right:100px;
+    color: white;
+    height:50px;
+    width:50px;
+}
+.connect a:hover{
+    color:greenyellow;
+}
+
+.footer p{
+    width:auto;
+    margin-left:500px;
+    margin-top:50px;
+    font-family:cursive;
+    font-size:20px;
+    color:white;
+    text-transform:capitalize;
+}
+.footer p i{
+    color:red;
+    font-size:20px;
+    animation: pulsate 3s linear infinite;
+}
+/* <!-- animations --> */
+@keyframes pulsate{
+    0%{
+        font-size:20px;
+    }
+    25%{
+        font-size:10px;
+    }
+    50%{
+        font-size:20px;
+    }
+    75%{
+        font-size:10px;
+    }
+    100%{
+        font-size:20px;
+    }
+    
+}
+@keyframes shake{
+    0%{
+        transform:rotateZ(0deg);
+    }
+    20%{
+         transform:rotateZ(-15deg);
+    }
+    50%{
+        transform:rotateZ(0deg);
+    }
+    75%{
+         transform:rotateZ(15deg);
+    }
+    100%{
+        transform:rotateZ(0deg);
+    }
+    
+    
+}
+@keyframes stop{
+    0%{
+        transform:rotateZ(0deg);
+    }
+    100%{
+        transform:rotateZ(0deg);
+    }
+}
+/*<!-- footer ends here -->*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

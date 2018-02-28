@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wait for it...</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:black">
+<div style="padding-top:20px"><p style="color:White"><span style="align:left;padding-left:50px">Welcome, Uni-Omni</span><span style="float:right;padding-right:50px">Level 3</span></div>
+<p style="padding-bottom:50px"></p>
+<textarea id="ta" onkeypress="eAlert(event,this)" style="display:block;margin-left:auto;margin-right:auto;"></textarea>
+<p id="tg" style="color:white;text-align:center;display:none;font-size:50px;"></br>Is the Key</p>
+<script>
+setTimeout(function(){
+document.getElementById("tg").style.display="block";
+},15000);
+function eAlert(e,textarea){
+var code=(e.keyCode?e.keyCode:e.which);
+if(code==13)
+{
+var str=document.getElementById("ta").value.toLowerCase();
+var k="patience";
+if(str===k)
+{
+location.href='D:/Kryptex/KryptexPage2.html';
+}
+}
+}
+</script>
+</body>
+</html>
